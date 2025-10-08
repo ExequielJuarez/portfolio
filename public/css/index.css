@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HTML y BODY configurados correctamente */
+html, body {
+  width: 100%;
+  height: 100vh; /* 👈 usa vh, no % */
+  overflow-x: hidden; /* 👈 evita el pixel blanco lateral */
+}
+
+
+
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+h3{
+    color: white;
+    font-size: 20px;
+}
+
+.fullstack{
+    text-align: center;
+    background: linear-gradient(to right, #37c4f2, #23aded); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #04091d, #162451);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  flex-direction: column;
+  padding: 0%;
+}
+.section1{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 23px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: aparecer 1s ease-out forwards;
+    
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* h1 */
+.section1 h1 {
+  opacity: 0;
+  animation: aparecer 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* h2 */
+.section1 h2 {
+  opacity: 0;
+  animation: aparecer 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+/* p */
+.section1 p {
+  opacity: 0;
+  animation: aparecer 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.primerp{
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    
+}
+
+.buttonProyecto{
+    border: none;
+    padding: 15px 20px 15px 20px;
+    background: linear-gradient(to right, #2464e9, #098fb5);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: aparecer 1s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+.cajaFotoPrin{
+    display: flex;
+    width: 82%;
+    height: 310px;
+    justify-content: center;
+    background-color: #274473;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow:
+    0 0 10px 2.5px #153A88,
+    0 0 20px 5px #0f5278;
+    opacity: 0;
+    transform: translateX(100px);
+    animation: entrarDerecha 1s ease-out forwards;
+    animation-delay: 1.2s;
+}
+.fotoPrin{
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Animación desde la derecha */
+@keyframes entrarDerecha {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tituloTecnologias{
+    font-size: 30px;
+    color: #35c5f2;
+}
+
+h4{
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+.contTecnologias{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.conthijatecnologia{
+    width: 35%;
+    height: 100px;
+    background-color: #172f5a;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #204683;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 0px 1px #204683; 
+    box-shadow: 0px 0px 0px 1px #204683;
+}
+
+.tecnologias{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imglogo{
+    width: 30px;
+    height: 30px;
+}
