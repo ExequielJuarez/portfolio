@@ -152,7 +152,7 @@ body {
 }
 
 .tituloTecnologias{
-    font-size: 30px;
+    font-size: 20px;
     color: #35c5f2;
 }
 
@@ -163,11 +163,14 @@ h4{
 }
 .contTecnologias{
     width: 100%;
-    height: 600px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    background: linear-gradient(to right, #04091d, #162451);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .conthijatecnologia{
@@ -196,4 +199,93 @@ h4{
 .imglogo{
     width: 30px;
     height: 30px;
+}
+
+.contProyectosDestacados{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  height: 550px;
+}
+
+.contProyectos{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  height: 130px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #11214a, #132c50);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 0px 1px #204683; 
+ box-shadow: 0px 0px 0px 1px #204683;
+ margin-top: 13px;
+  
+}
+
+.contCompletado{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 15px;
+  
+}
+
+.tituloPDestacado{
+  color: white;
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.descDestacado{
+  color: #6b768c;
+  font-size: 13px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.contIcons{
+  width: 20%;
+  padding-left: 15px;
+  font-size: 13px;
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+}
+
+.iconMayMen{
+  color: #60a5fa;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.completado{
+  background-color: #194a5b;
+  color: #38aa73;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  font-size: 13px;
+  align-items: baseline;
+  margin-right: 10px;
+}
+
+.enDesarrollo{
+  background-color: #40474a;
+  color: #a68f2b;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  font-size: 13px;
+  align-items: baseline;
+  margin-right: 10px;
+}
+
+.tituloPD{
+  font-size: 20px;
+  color: #35c5f2;
+  margin-bottom: 20px;
 }
